@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/sucursales.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a><img src="/images/LOG00.png" class="logo"></a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="Index.html" class="nav-link active">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link ">MENU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sucursales.html" class="nav-link ">SUCURSALES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="promociones.html" class="nav-link ">PROMOCIONES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link ">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br><br><br><br><br>
+
+
+ 
+
+    <section class="dis-sto">
+        <div class="container">
+            <div class="res-info">
+                <div>
+                    <img src="/images/Local1.svg" alt="">
+                </div>
+            
+                <div class="res-des pad-rig">
+                    <div class="global">
+                        <h2 class="h2-sub">
+                            <span class="fil">NUESTRAS</span>
+                        </h2><br>
+                        <h1 class="head hea-dark">SUCURSALES</h1>
+                        
+                    </div>
+
+                    <p>
+                        Nuestros locales no solo son para que comas y te vayas, no, sino que contamos con una experiencia única, 
+                        tenemos una zona de entretenimiento para que la pases bien en lo que esperas tu orden, contamos con una 
+                        zona para los amantes de los videojuegos, una zona para los amantes de las películas de ciencia ficción,
+                         una zona para los amantes de los comics, también es posible que te entretengas mientras comes.
+                    </p>
+                   
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="taste bt">
+        <div class="container">
+            <div class="global">
+ 
+                <h2 class="h2-sub">
+                    <span class="fil"></span>
+                    Actualmente contamos con locales en: 
+                </h2><br><br>
+
+                <p>Gran Rio Mall.</p><br>
+                <p>Plaza las Americas.</p><br>
+                <p>Zona Centro.</p><br><br>
+
+                <h1 class="head">Y muy pronto más cercas de ti.</h1>
+            </div>
+
+        
+        </div>
+    </section><br><br><br><br><br><br>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+             <div class="footer-col">
+                 <h4><a class="logo" href="/"><img src="/images/LOG0.svg" alt="logo"></a><br><br><br></h4>
+             </div>
+                <div class="footer-col">
+                    <h4>BurguerGeek</h4>
+                    <ul>
+                        <li><a href="Index.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#">Aviso de Privacidad</a></li>
+                        <li><a href="#">Terminos y Condiciones</a></li>
+                    </ul>
+                </div>
+ 
+ 
+                <div class="footer-col">
+                    <h4>Nuestras Redes</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    
+
+  
+
+    
+
+  
+
+    <script>
+
+        const selectElement = function(element) {
+            return document.querySelector(element);
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function(){
+            body.classList.toggle('open');
+        })
+
+    </script>
+
+    
+</body>
+</html>

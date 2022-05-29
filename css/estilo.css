@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/*----------------------------------------------------------- */
+
+@font-face {
+    font-family: "roboto";
+    src: url("../font/Roboto-Medium.ttf");
+}
+
+/*----------------------------------------------------------- */
+
+
+
+/*-------------------------------------------*/
+
+
+/*-------------------------------------------*/
+
+
+/*-------------------------------------------*/
+/*  MENU */
+
+.contenido {
+
+    width: 100%;
+    height: 50;
+    padding: 10px;
+    background: rgb(16, 16, 16);
+    color: rgb(250, 250, 250);
+
+
+}
+
+.contenido .contenedor-imagenes {
+    width: 33%;
+    padding-top: 20px;
+    margin: 0px;
+    float: left;
+    
+}
+
+
+
+/*-------------------------------------------*/
+
+.contenedor-imagenes{
+    display: flex;
+    width: 25%;
+    
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contenedor-imagenes .imagen{
+    width: 100%;
+    
+    position: relative;
+    height: auto;
+    margin: 10px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/*-------------------------------------------*/
+
+.centrador {
+
+    width: 1090px;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+
+
+footer {
+    clear: both;
+    float: right;
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 102px;
+    padding: 20px;
+    color: rgb(250, 250, 250);
+    background: rgb(51, 51, 51);
+}
+
+
+/*----------------------------------------------------------- */
+
+@media screen and (max-width:1000px) {
+
+    /*
+	agregue los comentarios acerca de lo que sucede cuando la pagina tiene 800px,  
+	explique cada una de los selectorea que se muestran a continuacion */
+
+    
+
+    .centrador {
+        width: 100%;
+        
+    }
+
+    .contenido {
+        width: 100%;
+    }
+    
+    
+    
+    .contenido img {
+        width: 100%;
+    }
+
+    
+
+    /*------------------------------------*/
+    /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+    @media screen and (max-width: 600px) {
+
+        div.body {
+            font-size: 12px;
+        }
+        .contenido .contenedor-imagenes {
+        width: 50%;
+        }
+        .contenido {
+        padding: 10px;
+        width: 100%;
+        }
+        
